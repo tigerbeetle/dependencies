@@ -6,7 +6,7 @@ are pulled from https://github.com/llvm/llvm-project/releases/tag/llvmorg-18.1.8
 is build with
 
 ```
-docker run -it --name llvm_build ubuntu:latest /bin/bash -c "
+docker run -it --name llvm_build ubuntu:noble-20240801 /bin/bash -c "
     apt-get update && apt-get install -y git cmake ninja-build clang
     git clone --depth 1 --branch release/18.x https://github.com/llvm/llvm-project.git
     mkdir llvm-project/build && cd llvm-project/build
